@@ -6,7 +6,7 @@ import android.view.View
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 import java.lang.NumberFormatException
-
+//Implementar o metodo onClick da  interface  View.OnClickListener
 class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     override fun onClick(view: View) {
-
+    //Capturar o evento pelo id do button
         val id = view.id
         if (id == R.id.buttonCalculate) {
             calculate()
